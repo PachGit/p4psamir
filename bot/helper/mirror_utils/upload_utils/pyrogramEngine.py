@@ -71,13 +71,13 @@ class TgUploader:
             if file_.endswith(suffix):
                 file_new = file_.removesuffix("." + suffix)
         if CUSTOM_FILENAME is not None:
-            cap_mono = f"{CUSTOM_FILENAME} <b>{file_new}\n\n@CB_PSARIPS1</b>"
+            cap_mono = f"{CUSTOM_FILENAME} <i><b>{file_new}</b></i><b>\n\n@T4TVSeries    | @P4PSa\nT4TVSeries ™  |  P4PSa  ™ </b>"
             file_ = f"{CUSTOM_FILENAME} {file_}"
             new_path = ospath.join(dirpath, file_)
             osrename(up_path, new_path)
             up_path = new_path
         else:
-            cap_mono = f"<b>{file_new}\n\n@CB_PSARIPS1</b>"
+            cap_mono = f"<i><b>{file_new}</b></i><b>\n\n@T4TVSeries    | @P4PSa\nT4TVSeries ™  |  P4PSa  ™ </b>"
         notMedia = False
         thumb = self.__thumb
         self.__is_corrupted = False
